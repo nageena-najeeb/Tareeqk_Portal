@@ -7,10 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Towing extends Model
 {
+    use HasFactory;
+
+    protected $table = 'towing';
+
     protected $fillable = [
         'customer_name',
         'location',
         'note',
-        'status'
+        'status',
     ];
 }

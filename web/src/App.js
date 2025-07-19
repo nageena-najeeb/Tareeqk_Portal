@@ -10,8 +10,9 @@ function App() {
   });
   const [success, setSuccess] = useState(false);
 
-  const handleChange = (e) =>
-    setForm({ form, [e.target.name]: e.target.value });
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
