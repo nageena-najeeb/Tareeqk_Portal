@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Towing extends Model
 {
-    use HasFactory;
 
     protected $table = 'towing';
 
